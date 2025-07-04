@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Avatar from './Avatar';
 import InteractiveArea from './InteractiveArea';
 import { InteractiveArea as InteractiveAreaType } from '../types';
 
@@ -74,21 +73,6 @@ const HomePage: React.FC = () => {
       
       {/* Main Content */}
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center p-4">
-        {/* Title */}
-        <div className="text-center mb-8 animate-fade-in">
-          <h1 className="text-2xl md:text-4xl font-pixel text-pokemon-dark mb-2">
-            Welcome to My Portfolio
-          </h1>
-          <p className="text-sm md:text-lg font-pixel text-pokemon-dark opacity-80">
-            Choose your adventure!
-          </p>
-        </div>
-
-        {/* Avatar */}
-        <div className="relative mb-8 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-          <Avatar />
-        </div>
-
         {/* Interactive Areas */}
         <div className="relative w-full max-w-6xl h-96 md:h-[500px]">
           {interactiveAreas.map((area) => (
