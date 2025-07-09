@@ -17,13 +17,14 @@ const InteractiveArea: React.FC<InteractiveAreaProps> = ({ area }) => {
       style={{ pointerEvents: area.disabled ? 'none' : undefined }}
     >
       <div
-        className="w-32 h-32 flex items-end justify-center bg-transparent rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-110"
+        className="w-full h-full flex items-end justify-center bg-transparent rounded-lg shadow-lg transition-transform duration-200 group-hover:scale-110"
         style={{ imageRendering: 'pixelated' }}
       >
         <img
           src={area.sprite}
           alt={area.title}
-          className="w-full h-full object-contain drop-shadow-lg pointer-events-none"
+          style={{ width: 256, height: 256 }}
+          className="object-contain drop-shadow-lg pointer-events-none"
           draggable={false}
         />
       </div>

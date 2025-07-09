@@ -30,34 +30,34 @@ const HomePage: React.FC = () => {
       <div className="relative" style={{ width: 1400, height: 900, maxWidth: '98vw', maxHeight: '90vh' }}>
         {/* Center flower garden */}
         <div style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)' }}>
-          <img src={flowerGardenSprite} alt="Flower Garden" className="w-60 h-48 object-contain" style={{ imageRendering: 'pixelated' }} />
+          <img src={flowerGardenSprite} alt="Flower Garden" className="object-contain" style={{ width: 256, height: 256, imageRendering: 'pixelated' }} />
         </div>
         {/* Skills - top center */}
-        <div style={{ position: 'absolute', left: '50%', top: '7%', transform: 'translate(-50%, 0)' }}>
+        <div style={{ position: 'absolute', left: '50%', top: '0%', transform: 'translate(-50%, 0)' }}>
           <div className="w-56 h-44">
             <InteractiveArea area={interactiveAreas[1]} />
           </div>
         </div>
         {/* About Me - upper left */}
-        <div style={{ position: 'absolute', left: '17%', top: '25%', transform: 'translate(-50%, -50%)' }}>
+        <div style={{ position: 'absolute', left: '17%', top: '40%', transform: 'translate(-50%, -50%)' }}>
           <div className="w-56 h-44">
             <InteractiveArea area={interactiveAreas[0]} />
           </div>
         </div>
         {/* Projects - upper right */}
-        <div style={{ position: 'absolute', left: '83%', top: '25%', transform: 'translate(-50%, -50%)' }}>
+        <div style={{ position: 'absolute', left: '83%', top: '40%', transform: 'translate(-50%, -50%)' }}>
           <div className="w-56 h-44">
             <InteractiveArea area={interactiveAreas[2]} />
           </div>
         </div>
         {/* Blog - lower left */}
-        <div style={{ position: 'absolute', left: '28%', top: '78%', transform: 'translate(-50%, -50%)' }}>
+        <div style={{ position: 'absolute', left: '28%', top: '80%', transform: 'translate(-50%, -50%)' }}>
           <div className="w-56 h-44">
             <InteractiveArea area={interactiveAreas[3]} />
           </div>
         </div>
         {/* Contact - lower right */}
-        <div style={{ position: 'absolute', left: '72%', top: '78%', transform: 'translate(-50%, -50%)' }}>
+        <div style={{ position: 'absolute', left: '72%', top: '80%', transform: 'translate(-50%, -50%)' }}>
           <div className="w-56 h-44">
             <InteractiveArea area={interactiveAreas[4]} />
           </div>
