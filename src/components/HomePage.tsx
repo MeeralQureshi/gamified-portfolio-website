@@ -32,16 +32,16 @@ const HomePage: React.FC = () => {
         <div style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)' }}>
           <img src={flowerGardenSprite} alt="Flower Garden" className="object-contain" style={{ width: 256, height: 256, imageRendering: 'pixelated' }} />
         </div>
-        {/* Skills - top center */}
+        {/* About Me - top center */}
         <div style={{ position: 'absolute', left: '50%', top: '0%', transform: 'translate(-50%, 0)' }}>
           <div className="w-56 h-44">
-            <InteractiveArea area={interactiveAreas[1]} />
+            <InteractiveArea area={interactiveAreas[0]} />
           </div>
         </div>
-        {/* About Me - upper left */}
+        {/* Skills - upper left */}
         <div style={{ position: 'absolute', left: '17%', top: '40%', transform: 'translate(-50%, -50%)' }}>
           <div className="w-56 h-44">
-            <InteractiveArea area={interactiveAreas[0]} />
+            <InteractiveArea area={interactiveAreas[1]} />
           </div>
         </div>
         {/* Projects - upper right */}
