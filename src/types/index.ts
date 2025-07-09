@@ -1,11 +1,8 @@
 export interface InteractiveArea {
   id: string;
   title: string;
-  description: string;
-  icon: string;
-  position: string;
+  sprite: string;
   route: string | null;
-  type: 'bookshelf' | 'pc-terminal' | 'door' | 'tv-console';
   disabled?: boolean;
 }
 
